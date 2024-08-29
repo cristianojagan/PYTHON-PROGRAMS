@@ -10,4 +10,6 @@ def LatestWeather():
     url=f'https://api.openweathermap.org/data/2.5/weather?appid={os.getenv("API_KEY")}&q={city}&units=metric'
     request=requests.get(url).json()
     print(request)
-LatestWeather()
+
+if __name__=="__main__":
+    LatestWeather()
